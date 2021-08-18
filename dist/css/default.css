@@ -18,4 +18,10 @@ html {
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
 }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
 /*# sourceMappingURL=default.css.map */
