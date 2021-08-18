@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -25,7 +46,7 @@ header .logo {
   font-weight: bolder;
 }
 
-header .logo i {
+svg.svg-inline--fa.fa-utensils.fa-w-13 {
   color: #27ae60;
 }
 
@@ -34,5 +55,33 @@ header .navbar a {
   border-radius: .5rem;
   padding: .5rem 1.5rem;
   color: #666;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  color: #FFF;
+  background-color: #27ae60;
+}
+
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: .5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #192a56;
+  border-radius: 50%;
+  background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+  color: #fff;
+  background: #27ae60;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 /*# sourceMappingURL=header.css.map */
