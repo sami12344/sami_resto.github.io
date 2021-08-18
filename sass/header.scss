@@ -1,0 +1,36 @@
+@import 'config.scss';
+
+
+header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    box-shadow: $box-shadow;
+
+
+}
+
+header .logo{
+    color: $black;
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+}
+header .logo i{
+    color: $green;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: $light-color;
+
+}
