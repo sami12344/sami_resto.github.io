@@ -1,0 +1,155 @@
+@import "config.scss";
+@import "default.scss";
+
+.sub-heading {
+  text-align: center;
+  color: $green;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.heading {
+  text-align: center;
+  color: $black;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.dishes {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+    .box {
+      padding: 2.5rem;
+      background-color: #fff;
+      border: 0.1rem solid rgba(0, 0, 0, 0.2);
+      box-shadow: $box-shadow;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      .fa-heart {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background-color: #eee;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        color: $black;
+        &:hover {
+          background-color: $green;
+          color: #fff;
+        }
+      }
+      .fa-eye {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        background-color: #eee;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        color: $black;
+        &:hover {
+          background-color: $green;
+          color: #fff;
+        }
+      }
+
+      img {
+        height: 17rem;
+        margin: 1rem 0;
+        object-fit: contain;
+        object-position: center;
+      }
+      h3 {
+        color: $black;
+        font-size: 2.5rem;
+      }
+      .starts {
+        padding: 1rem 0;
+        i {
+          font-size: 1.7rem;
+          color: $green;
+        }
+      }
+      span{
+          color: $green;
+          font-weight: bolder;
+          margin-right: 1rem;
+          font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    .dishes{
+        .box-container{
+            .box{
+                img{
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

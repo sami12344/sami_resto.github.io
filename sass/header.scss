@@ -52,7 +52,7 @@ header .icons a {
 header .icons i:hover,
 header .icons a:hover {
   color: #fff;
-  background: var(--green);
+  background: $green;
   transform: rotate(360deg);
 }
 
@@ -93,6 +93,10 @@ header .icons #menu-bars {
         font-size: 2rem;
         background:#eee;
     }
+    
+
 
  
 }
+
+

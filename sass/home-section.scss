@@ -1,0 +1,81 @@
+@import "default.scss";
+@import "config.scss";
+@import url("https://unpkg.com/swiper/swiper-bundle.min.css");
+
+section {
+  padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+  background-color: #eee;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: $black;
+  border-radius: .5rem;
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $green;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $green;
+}
+
+.home {
+  .home-slider {
+    .slide {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding-top: 9rem;
+      .content {
+        flex: 1 1 45rem;
+        span {
+          color: $green;
+          font-size: 2.5rem;
+        }
+        h3 {
+          color: $black;
+          font-size: 7rem;
+        }
+        p {
+          color: $light-color;
+          font-size: 2.2rem;
+          padding: 0.5rem 0;
+          line-height: 1.5;
+        }
+      }
+      .image {
+        flex: 1 1 45rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    .home-slider {
+      .slide {
+        .content {
+          h3 {
+            font-size: 5rem;
+          }
+        }
+      }
+    }
+  }
+  section {
+    padding: 2rem;
+  }
+}

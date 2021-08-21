@@ -1,0 +1,40 @@
+@import 'config.scss';
+@import 'default.scss';
+
+.footer{
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap:1.5rem;
+        
+        .box{
+            h3{
+                padding: .5rem 0;
+                font-size: 2.5rem;
+                color: $black;
+            }
+            a{
+                display: block;
+                padding: .5rem 0;
+                font-size: 1.5rem;
+                color: $light-color;
+                &:hover{
+                    color: $green;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .credit{
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        font-size: 2rem;
+        color: $black;
+        padding: .5rem;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+        span{
+            color: $green;
+        }
+    }
+}

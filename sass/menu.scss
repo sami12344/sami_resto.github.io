@@ -1,0 +1,71 @@
+@import "config.scss";
+@import "default.scss";
+
+.menu {
+  .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    .box{
+      background-color: #fff;
+      border: 1rem solid rgba(0, 0, 0, 0.2);
+      border-radius: 0.5rem;
+      box-shadow: $box-shadow;
+      .image{
+        height: 25rem;
+        width: 100%;
+        padding: 1.5rem;
+        overflow: hidden;
+        position: relative;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 0.5rem;
+          object-fit: cover;
+        }
+        .fa-heart{
+          position: absolute;
+          top: 2.5rem;
+          right: 2.5rem;
+          height: 5ren;
+          width: 5rem;
+          line-height: 5rem;
+          text-align: center;
+          font-size: 2rem;
+          background-color: #fff;
+          border-radius: 50%;
+          color: $black;
+          &:hover{
+            background-color: $green;
+            color:#fff;
+          }
+        }
+      }
+      .content{
+        padding: 2rem;
+        padding-top: 0;
+        .stars{
+          padding-bottom: 1rem;
+          i{
+            font-size: 1.7rem;
+            color: $green;
+          }
+        }
+        h3{
+          color: $black;
+          font-size: 2.5rem;
+        }
+        p{
+          color: $light-color;
+          font-size: 1.6rem;
+          padding: .5rem 0;
+          line-height: 2rem;
+        }
+        .price{
+          color: $green;
+          margin-left: 1rem;
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
