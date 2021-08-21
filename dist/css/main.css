@@ -1020,7 +1020,7 @@ html {
   height: 100%;
   width: 100%;
   z-index: 10000;
-  background-color: #fff;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1037,8 +1037,8 @@ html {
   width: 35rem;
 }
 
-.loader-container .fade-out {
-  top: 110%;
+.loader-container.fade-out {
+  top: -110%;
   opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */

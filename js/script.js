@@ -44,7 +44,7 @@ var swiper = new Swiper(".home-slider", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
-    delay: 7500,
+    delay: 2500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -83,7 +83,7 @@ function loader(){
 }
 
 function fadeOut(){
-  setInterval(loader, 300);
+  setInterval(loader, 3000);
 }
 
 window.onload = fadeOut;
