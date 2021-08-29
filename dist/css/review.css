@@ -33,6 +33,9 @@ html {
 }
 
 .review .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 5rem;
   -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
@@ -44,7 +47,7 @@ html {
 .review .slide .fa-quote-right {
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 1.5rem;
   font-size: 6rem;
   color: #ccc;
 }
@@ -53,10 +56,13 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-bottom: 1.5rem;
 }
 
@@ -75,7 +81,7 @@ html {
 }
 
 .review .slide .user i {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #27ae60;
 }
 
@@ -83,5 +89,7 @@ html {
   font-size: 1.5rem;
   line-height: 1.8;
   color: #666;
+  padding: 1.5rem;
+  text-align: center;
 }
 /*# sourceMappingURL=review.css.map */
